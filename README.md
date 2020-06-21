@@ -6,16 +6,18 @@ This repository makes a workaround to install python packages using docker-compo
 
 ### Run it
 
-Make sure there is a *requierements.txt* with the libraries you want to install in the airflow container. Then run:
+Make sure there is a *requierements.txt* with the libraries you want to install in the airflow container.
 
 ```$docker-compose up -d```
 
 ### Check the installation
 
 Get into the console of the container:
+
 ```$ docker exec -it <mycontainer> bash```
 
 In the container shell run:
+
 ```$ pip freeze```
 
 Your python libraries should be there.
